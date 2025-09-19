@@ -86,7 +86,7 @@ async def user_count_command(bot, message):
     try:
         with open("users.json", "r") as f:
             user_list = json.load(f)
-        await message.reply_text(f"Users: **{len(user_list)}**")
+        await message.reply_text(f"⭐️ Users: **{len(user_list)}**")
     except FileNotFoundError:
         await message.reply_text("Файл с пользователями не найден. Возможно, еще никто не писал боту.")
     except json.JSONDecodeError:
@@ -164,17 +164,17 @@ async def handle_admin_commands(bot, message):
             return
         
         if await ban_user(user_id):
-            await message.reply_text(f"Пользователь с ID {user_id} забанен.")
+            await message.reply_text(f"⭐️ User with ID {user_id} has been banned.")
         else:
             await message.reply_text(f"Ошибка при блокировке пользователя с ID {user_id}")
 
     elif message.text.startswith('/unban'):
         if not await is_banned(user_id):
-            await message.reply_text(f"User with ID {user_id} has been banned.")
+            await message.reply_text(f"Пользователь с ID {user_id} не забанен..")
             return
 
         if await unban_user(user_id):
-            await message.reply_text(f"User with ID {user_id} has been unbanned.")
+            await message.reply_text(f"⭐️ User with ID {user_id} has been unbanned.")
         else:
             await message.reply_text(f"Ошибка при разблокировке пользователя с ID {user_id}")
 
@@ -266,6 +266,7 @@ async def replay_media(bot, message):
             from_chat_id=message.chat.id,
             message_id=message.id
         )
+
 
 
 bot.run()
