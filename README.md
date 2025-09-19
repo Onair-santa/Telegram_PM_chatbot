@@ -1,5 +1,5 @@
 # 📥Telegram_PM_chatbot
-Simple PM-bot
+A lightweight and fast personal messaging bot. With user ban and counting capabilities. Anonymous support bot
 ## 💠 USAGE
 
 - Users can pm to the bot via text or media messages
