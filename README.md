@@ -50,7 +50,6 @@ sudo systemctl status pmchat
 ```
 💠Bot command
 ```
-/start       start
 /infouser    user counter
 
 reply to a message
