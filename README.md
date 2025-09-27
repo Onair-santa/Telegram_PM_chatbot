@@ -50,7 +50,7 @@ sudo systemctl status pmchat
 ```
 💠Bot command
 ```
-/infouser    user counter
+/user    user counter
 
 reply to a message
 /ban         ban
