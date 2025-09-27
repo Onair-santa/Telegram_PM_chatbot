@@ -81,7 +81,7 @@ async def help_me(bot, message):
     )
 
 # Новый обработчик для подсчета пользователей
-@bot.on_message(filters.private & filters.command(['infouser']) & filters.user(Config.ADMIN))
+@bot.on_message(filters.private & filters.command(['user']) & filters.user(Config.ADMIN))
 async def user_count_command(bot, message):
     try:
         with open("users.json", "r") as f:
@@ -270,3 +270,4 @@ async def replay_media(bot, message):
 
 
 bot.run()
+
