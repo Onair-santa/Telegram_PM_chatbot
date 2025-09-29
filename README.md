@@ -52,7 +52,7 @@ sudo systemctl status pmchat
 ```
 /user    user counter
 
-reply to a message
+Admin reply to a message
 /ban         ban
 /unban       unban
 /info        info
